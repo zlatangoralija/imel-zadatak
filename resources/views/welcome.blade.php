@@ -10,7 +10,7 @@
                     <div class="panel-body">
                         Ako već imate račun na našem portalu, molimo Vas da se prijavite. Ako to nije slučaj, molimo Vas da se registrujete.<br>
                         <b>NAPOMENA:</b> Za pristup admin panelu, prijavite se preko administratorskog računa:<br>
-                        E-mail: admin@yahoo.com<br>
+                        E-mail: administrator@email.com<br>
                         Lozinka: admin123
                         <br>
                         <br>
