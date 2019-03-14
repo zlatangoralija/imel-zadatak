@@ -21,6 +21,7 @@
             {!! Form::submit('Potvrdi', ['class'=>'btn btn-primary']) !!}
         </div>
         {{ Form::close() }}
+        @include('includes.form_error')
     </div>
     <div class="col-sm-6">
         {{--Ako ima kategorija u bazi podataka, prikazat će se ispod--}}
@@ -46,4 +47,5 @@
             </table>
         @endif
     </div>
+
 @stop

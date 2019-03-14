@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use App\Http\Requests\CategoryRequest;
 
 use App\Http\Requests;
 
@@ -38,7 +39,7 @@ class AdminCategoriesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CategoryRequest $request)
     {
         //Spremanje nove kategorije koju korisnik unese putem forme
         Category::create($request->all());
@@ -76,7 +77,7 @@ class AdminCategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CategoryRequest $request, $id)
     {
         //Izmjena kategorije koju je korisnik prethodno odabrao
         $category = Category::findOrFail($id);

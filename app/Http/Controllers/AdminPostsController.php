@@ -93,7 +93,7 @@ class AdminPostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PostsCreateRequest $request, $id)
     {
         //Izmjena objave koju je korisnik prethodno odabrao
         $input = $request->all();

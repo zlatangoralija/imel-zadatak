@@ -3,6 +3,7 @@
 @section('content')
     <h1>Izmjena kategorije</h1>
     {{--Forma za izmjenu kategorije, izmjena se vrši preko ID-a same kategorije--}}
+        @include('includes.form_error')
     <div class="col-sm-6">
         {!! Form::model($category, ['method'=>'PATCH', 'action'=>['AdminCategoriesController@update', $category->id]])!!}
         <div class="form-group">

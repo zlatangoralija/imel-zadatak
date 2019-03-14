@@ -23,12 +23,12 @@ class PostsCreateRequest extends Request
      */
     public function rules()
     {
+        //Validacija podataka koja govori koja polja su obavezna pirlikom kreiranja objave
         return [
-//            'title'        =>'required',
-//            'category_id'  =>'required',
-//            'user_id'      =>'required',
-//            'photo'        =>'required',
-//            'body'         =>'required',
+            'title'        =>'required',
+            'category_id'  =>'required',
+            'photo_id'        =>'required',
+            'body'         =>'required',
         ];
     }
 }
